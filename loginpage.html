@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        .container{
+            max-width: 500px;
+            margin: auto;
+            background-color:whitesmoke ;
+            padding: 25px;
+        }
+        .imgcontainer{
+            max-width: 230px;
+            margin: auto;
+        }
+
+        
+
+        input[type=text],input[type=password]{
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 1px solid green;
+            box-sizing:border-box;
+            -moz-box-align: center;
+            
+        }
+
+        button{
+            background-color: green;
+            width: 100%;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0px;
+            border:none;
+            cursor: pointer;
+            
+           
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        .cancelbtn{
+            background-color: red;
+            width:auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+        span.psw {
+            float: right;
+            padding-top: 16px;
+            } 
+            h2{
+                text-align: center;
+            }  
+       
+    </style>
+</head>
+<body>
+    
+    <h2>Login Form</h2>
+    <form id="" onsubmit="submit_form()">
+        <div class="imgcontainer">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZsL6PVn0SNiabAKz7js0QknS2ilJam19QQ&usqp=CAU"height="200px" width="200px" alt=""/>
+
+        </div>
+        <div class="container">
+            <label><b>Email:</b></label>                                             
+            <input type="text" placeholder="Enter Email " name="email" required>
+            <br/>
+            
+            <label><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <br/>
+            
+            <button type="submit">Login</button>
+            <br/>
+
+            <input type="checkbox" checked="checked">Remember Me?
+            <br/>
+
+            <button type="button" class="cancelbtn">Cancel</button>
+
+            
+            <span class="psw">Forgot <a href="#">password?</a></span>
+
+           <span>Don't have an account?</span> <a href="registerationpage.html" target="_blank">Register here</a>
+        </div>
+    </form>
+    
+   <script type="text/javascript">
+        function submit_form(){  
+        alert("Login successfully");  
+        }  
+    </script>
+</body>
+</html>
